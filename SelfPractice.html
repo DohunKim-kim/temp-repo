@@ -1,30 +1,55 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Coding</title>
-    <link rel="stylesheet" href="style.css2">
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1><a href="#">CODING</a></h1>
-            <div class="nav">
-                <ul>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JAVASCRIPT</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="hero">
-            <h2>CODE IN HTML</h2>
-            <p>Subscribe Easy Youtube Channel to watch more vides,
-                <br>press t he bell icon to get latest updates.
-            </p>
-            <button>more videos</button>
-        </div>
-    </div>
+    <script>
+        var Body = {
+            setColor:function (color){
+                document.querySelector('body').style.color = color;
+            },
+            setBackgroundColor:function (color){
+                document.querySelector('body').style.backgroundColor = color;
+            }
+        }
+
+        var Links = {
+            setColor:function (color){
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = color;
+                    i = i + 1;
+                }
+            }
+        }
+
+        function nightDayHandler(self){
+            var target = document.querySelector('body');
+            if(self.value === 'night'){
+                Body.setBackgroundColor('black');
+                Body.setColor('white');
+                self.value = 'day';
+    
+                Links.setColor('powderblue')
+    
+            } else{
+                Body.setBackgroundColor('white');
+                Body.setColor('black');
+                self.value = 'night';
+    
+                Links.setColor('blue');
+            }
+        }
+    </script>
+    <h1><a href="#_html">WEB</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+    ">
+
 </body>
 </html>
