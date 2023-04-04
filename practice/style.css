@@ -73,3 +73,7 @@
     cursor: pointer; /* 커서 모양 지정 */
     transition: all .4s; /* 모든속성, 0.4초동안 전환 */
 }
+
+p:hover{
+    color:red;
+}

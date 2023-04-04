@@ -1,0 +1,9 @@
+.container{
+    display:flex;
+    background-color: yellow;
+}
+
+.item{
+    background-color: cyan;
+    margin-inline:10px;
+}
