@@ -1,0 +1,61 @@
+.top-nav{
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    padding: 8px;
+}
+
+.top-nav div{
+    padding: 14px 16px;
+}
+
+.top-nav a{
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 14px 16px;
+}
+
+.google-logo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 38px;
+    min-height: 200px;
+}
+
+.logo-image{
+    width: 272px;
+    height: 92px;
+}
+
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 561px;
+    height: 44px;
+    box-shadow: 1px 1px 1px 2px grey;
+    border-radius: 2em;
+}
+
+.search-bar{
+    width: 459px;
+    outline: none;
+    border: none;
+    background-color: none;
+}
+
+.shortcut{
+    display: flex;
+    width: 112px;
+    height: 112px;
+    align-items:center;
+}
