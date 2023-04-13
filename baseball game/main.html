@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="content">
+    <div class="container">
       <div class="btn-group"> 
-        <input type="button" value="3자리" onclick="test(this.value)">
-        <input type="button" value="4자리" onclick="test(this.value)">
-        <input type="button" value="5자리" onclick="test(this.value)">
+        <input type="button" value="3자리" onclick="inputDigit(this.value)">
+        <input type="button" value="4자리" onclick="inputDigit(this.value)">
+        <input type="button" value="5자리" onclick="inputDigit(this.value)">
       </div>
-      <div class="num-input">
-        <input type="text" placeholder="입력하시오" class="num">
-        <input type="button" value="입력" onclick="addVal()">
+      <div class="input-content">
+        <input type="text" placeholder="입력하시오" class="input-number">
+        <input type="button" value="입력" onclick="addValue()">
       </div>
-      <div class="table">
+      <div class="table-content">
         <table class="game-table" border="1">
           <tr>
             <td>순서</td><td>숫자</td><td>결과</td>

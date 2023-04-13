@@ -1,4 +1,4 @@
-.content{
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,7 +6,7 @@
     min-height: 100vh;
 }
 
-.btn-group, .num-input, .table{
+.btn-group, .input-content, .table-content{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,12 +14,13 @@
 }
 
 table{
-    width: 50%;
+    width: 500px;
     border: 1px solid black;
 }
 
 th, td{
     border: 1px solid black;
+    text-align: center;
 }
 
 div input{
