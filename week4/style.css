@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+}
+
+.category{
+    display: flex ;
+    flex-wrap: wrap;
+    width: 90vw;
+    justify-content: space-between;
+    align-content:flex-start;
+    border: solid black;
+}
+
+.selection div img{
+    height: 80px;
+    width: 60px;
+}
+
+.selection button{
+    width: 40px;
+}
+
+li{
+    list-style: none;
+}

@@ -1,3 +1,8 @@
+const $firstCatImage = document.querySelector(".first-cat-image");
+const $secondCatImage = document.querySelector(".second-cat-image");
+const $signin = document.querySelector(".signin");
+
+
 function validEmail(){
     const id = document.querySelector(".id");
     const idResult = document.querySelector(".id-result");
@@ -64,3 +69,15 @@ const autoHyphen = (target) => {
       .replace(/[^0-9]/g, '')
      .replace(/^(\d{0,3})(\d{0,4})(\d{0,4})$/g, "$1-$2-$3").replace(/(\-{1,2})$/g, "");
 }
+
+function getCatImg(){
+    axios.get("https://api.thecatapi.com/v1/images/search?size=full")
+    .then(res => res.data)
+    .then(value => $firstCatImage.src = value[0].url)
+
+    axios.get("https://api.thecatapi.com/v1/images/search?size=full")
+    .then(res => res.data)
+    .then(value => $secondCatImage.src = value[0].url)
+}
+
+$signin.addEventListener("click", getCatImg);

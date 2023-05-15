@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+@media only screen and (min-width: 320px){
+
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src:url;
+    font-style: normal;
+    font-weight: 300;
+}
+
+body{
+    margin: 0px;
+}
+
+.header{
+    margin-left: 236px;
+}
+
+.arrow{
+    margin-top: 24px;
+    margin-left: 10px;
+}
+
+.enroll-store{
+    font-size: 24px;
+    color: #252525;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.detail-comment{
+    font-size: 18px;
+    margin-top: 24px;
+    margin-left: 40px;
+}
+
+.detail-info-input{
+    display: flex;
+    margin-top: 19px;
+    margin-left: 39px;
+}
+
+.detail-input{
+    color: #F7941E;
+    font-size: 15px;
+}
+
+.page-index{
+    color: #F7941E;
+    font-size: 15px;
+    margin-left: 130px;
+}
+
+.white-bar{
+    margin-left: 32px;
+}
+
+.info-container{
+    margin-top: 32px;
+    margin-left: 32px;
+    display: grid;
+    grid-template-columns: 60px 229px;
+    grid-column-gap: 16px;
+    grid-row-gap: 24px;
+    place-items: center;
+}
+
+.item{
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #175C8E;
+}
+
+.text-item{
+    height: 32px;
+    width: 220px;
+}
+
+.buttons{
+    margin-top: 32px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.btn1, .btn2, .btn3{
+    margin-right: 8px;
+    width:16px;
+    height:16px;
+    border-radius: 50%;
+    border: solid 2px #FFFFFF;
+}
+
+
+.word{
+    margin-right: 11px;
+    font-size: 15px;
+    color: #858585;
+}
+
+.next-button{
+    margin-top: 29px;
+    margin-left: 241px;
+    width: 105px;
+    height: 38px;
+    background-color: #175C8E;
+    color: #FFFFFF;
+    border: solid 1px #175C8E;
+
+}

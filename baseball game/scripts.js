@@ -6,22 +6,17 @@ const $gameTable = document.querySelector(".game-table");
 let answer;
 
 function inputDigit(numberOfDigit){
-    if(numberOfDigit === "3자리"){
-        answer = randomNumber(3);
-    } else if(numberOfDigit === "4자리"){
-        answer = randomNumber(4);
-    } else if(numberOfDigit === "5자리"){
-        answer = randomNumber(5);
-    }
+    $gameTable.innerHTML = "<tr><td>순서</td><td>숫자</td><td>결과</td></tr>";
+    answer = randomNumber(numberOfDigit[0]);
 }
 
 function randomNumber(numberOfDigit){
     let result = 0;
     let existingNumbers = [];
     for (step = 0; step < numberOfDigit; step++) {
-        let randomNumber = Math.floor(Math.random() * (9 - 1) + 1);
+        let randomNumber = Math.floor(Math.random() * (MAX_RANDOM_NUMBER - MIN_RANDOM_NUMBER) + MIN_RANDOM_NUMBER);
         while (existingNumbers.includes(randomNumber)){
-            randomNumber = Math.floor(Math.random() * (9 - 1) + 1);
+            randomNumber = Math.floor(Math.random() * (MAX_RANDOM_NUMBER - MIN_RANDOM_NUMBER) + MIN_RANDOM_NUMBER);
         }
         existingNumbers.push(randomNumber);
     }
@@ -60,7 +55,7 @@ function addValue(){
             turn.innerText = `${index++}`;
             number.innerText = `${$inputNumber.value}`
             if(pitchResult[1] === convertedAnswer.length){
-                result.innerText = `O.K.`
+                result.innerText = `O.K.`;
             } else{
                 result.innerText = `B: ${pitchResult[0]}, S: ${pitchResult[1]}`;
             }
@@ -93,8 +88,3 @@ function checkBallAndStrike(answer){
     }
     return score;
 }
-
-
-// 새롭게 구현해야 하는 것들
-// 1. 버튼 누르면 표 초기화 하기
-// 2. 게임이 끝나면 더 이상 입력 받지 않게 하기
