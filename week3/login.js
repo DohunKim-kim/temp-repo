@@ -47,8 +47,10 @@ function attemptLogin(userId, password){
     else{
         countWrongAttempt++;
         if(countWrongAttempt >= 5){
-            document.cookie = `banFlag=${$id.value}; expires=` + oneHour;
+            document.cookie = `banFlag=true; expires=` + oneHour;
             alert("로그인 5회 이상 실패하여 1시간 동안 로그인 금지");
+            $login.disabled = true;
+
         }
         else{
             alert("로그인 실패");
