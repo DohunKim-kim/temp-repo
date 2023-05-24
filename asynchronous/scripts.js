@@ -1,3 +1,0 @@
-function getCatImg(){
-    axios.get()
-}

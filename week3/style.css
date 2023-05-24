@@ -32,6 +32,10 @@
     color:black;
 }
 
+.logout{
+    margin-top: 10px;
+}
+
 .image-container{
     display: flex;
     justify-content: center;
